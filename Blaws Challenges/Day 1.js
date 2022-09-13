@@ -43,22 +43,38 @@ const decode = (message) => {
         items)
         .join('');
 }
+let specialString= "e!!Igv)tSlltBcvbdeDHEdVw!OOtI#Aa.ZMDuLWYpP^VVjDchISOiv#ylhgmQfs."
 
 
 function fixString (string) {
-    const code = "OIZEhSGLBq".split('')
-    const codeReverse= "0123456789".split('')
-    for ( let i=0 ; i< string.length; i++){
-
-        if(string.includes(codeReverse[i])){
-           string= string.replaceAll(codeReverse[i],code[i])
-        }
-        else if (string.includes(code[i])){
-           string= string.replaceAll(code[i],codeReverse[i])}
-        }
-        return string
-        }
+    const code ="OIZEhSGLBq".split('')
+    let message= string.split('').map((items)=> (Number(items)||items==="0")? code[items]: code.includes(items)?code.indexOf(items):items)
+    return message.join('')
 
 
-console.log(fixString("PR0-T1P #hqB: 1T'5 N1C3 T0 5AY H3770."))
-console.log(fixString("e!!Igv)t5lltBcvbdeDH3dVw!OOtI#Aa.ZMDu7WYpP^VVjDc4I50iv#ylhgmQfs"))
+    }
+
+
+let mine= fixString(specialString)
+let notmine= decode(specialString)
+specialString
+mine         
+notmine      
+
+console.log(mine===notmine)
+// function fixString (string) {
+//     const code = "OIZEhSGLBq".split('')
+//     const codeReverse= "0123456789".split('')
+
+//     for ( let i=0 ; i< string.length; i++){
+
+//         if(string.includes(codeReverse[i])){
+//            string= string.replaceAll(codeReverse[i],code[i])
+//         }
+//         else if (string.includes(code[i])){
+//            string= string.replaceAll(code[i],codeReverse[i])}
+//         }
+//         return string
+//         }
+
+
