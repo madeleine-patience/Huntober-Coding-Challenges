@@ -6,5 +6,4 @@ let removeEek= catArr.replaceAll("Eek!",'').split('').reverse().join('')
 let finalSplit= removeEek.split('v')
 return finalSplit
 }
-
 console.log(catAttack(catString))
