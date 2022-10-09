@@ -21,9 +21,7 @@ for(let i=0; i<string.length; i++){
 return correctedString.join('')
 }
 
+const encryptedMsg = "e!!Igv)t5lltBcvbdeDH3dVw!OOtI#Aa.ZMDu7WYpP^VVjDc4I50iv#ylhgmQfs"
 
-
-console.log( removeCharacters("Thies its H alltowe!en!? Th#is Tis GHalolowmeen$!"
-
-,4))
+console.log( removeCharacters(encryptedMsg,3))
 
