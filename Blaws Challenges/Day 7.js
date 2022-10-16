@@ -13,9 +13,8 @@ function swapAlphabet (string){
  let littleAlphabet=alphabet.toLowerCase()
  let reverseAlphabet= alphabet.split('').reverse().join('')
  let littleReverseAlphabet=reverseAlphabet.toLowerCase()
- alphabet
- reverseAlphabet
 
+ 
  let correctedString = []
  for(let i=0; i<string.length;i++){
      if(littleAlphabet.includes(string[i])){
