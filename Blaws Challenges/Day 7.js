@@ -1,10 +1,3 @@
-
-
-// Today you'll need to create a function that swaps each letter of the alphabet for its opposite. A letter's opposite is one that, if the alphabet were flipped Z-A, would be the same number of letters in, and which would also have the opposite case.
-
-
-// Do me a favor and try to solve it a couple of different ways to see which you preferred and why.
-
 function swapAlphabet (string){
     string=string.split('')
     string=string.map(items=>items===items.toUpperCase()?items.toLowerCase():items.toUpperCase())
@@ -29,14 +22,9 @@ function swapAlphabet (string){
     else if(reverseAlphabet.includes(string[i])){
         correctedString.push(alphabet[reverseAlphabet.indexOf(string[i])])
     }
-
     else {
         correctedString.push(string[i])
     }
-
  }
- 
 return correctedString.join('')
-
 }
-console.log(swapAlphabet("abCDef!!!   HI"))
