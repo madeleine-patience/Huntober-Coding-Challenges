@@ -1,0 +1,23 @@
+{
+  "name": "huntober-coding-challenges",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Day 1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "testing": "mocha 'blaw'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madeleinebelanger/Huntober-Coding-Challenges.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madeleinebelanger/Huntober-Coding-Challenges/issues"
+  },
+  "homepage": "https://github.com/madeleinebelanger/Huntober-Coding-Challenges#readme",
+  "dependencies": {
+    "mocha": "^10.1.0"
+  }
+}
